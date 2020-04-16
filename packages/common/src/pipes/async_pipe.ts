@@ -85,7 +85,7 @@ export class AsyncPipe implements OnDestroy, PipeTransform {
 
   private _subscription: SubscriptionLike|Promise<any>|null = null;
   private _obj: Observable<any>|Promise<any>|EventEmitter<any>|null = null;
-  private _strategy: SubscriptionStrategy = null!;
+  private _strategy: SubscriptionStrategy = null;
 
   constructor(private _ref: ChangeDetectorRef) {}
 
